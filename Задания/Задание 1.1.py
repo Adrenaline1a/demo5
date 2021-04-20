@@ -10,8 +10,7 @@ if __name__ == '__main__':
         print("Запятая на первой позиции")
         exit(2)
     else:
-        for i in range(d):
-            s=a.split(',')
-            c=s[0]
-        print("Символы до первой запятой: ", c)
-        exit(3)
+        s=a.split(',')
+        c=s[0]
+    print("Символы до первой запятой: ", c)
+    exit(3)
