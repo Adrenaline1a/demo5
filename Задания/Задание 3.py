@@ -3,9 +3,10 @@
 if __name__ == '__main__':
     a = str(input("Введите фразу: "))
     s = 0
-    for i in range(len(a)):
-        if a[i].isdigit():
-            s += int(a[i])
+    a = list(a)
+    for i in a:
+        if i.isdigit():
+            s += int(i)
     if s == 0:
         print("Чисел нет")
         exit(2)
